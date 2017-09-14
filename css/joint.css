@@ -1,0 +1,435 @@
+@charset "utf-8";
+/*以下全为公共部分的css样式，包括手机样式
+ * 
+ * 这些css其中大部分是自己写的，还有一部分是订制的bootstrap的风格* 
+ * 这个文件提供了基本的网站所有的基本css样式！
+ * 具体样式，请按F12查看相应元素
+ * 
+ */
+
+.bg-green {
+  background-color: #40aa40;
+}
+.bd-green {
+  border-color: #40aa40;
+}
+.bg-blue {
+  background-color: #5cc2e0;
+}
+.bd-blue {
+  border: 1px solid #5cc2e0;
+}
+.bg-red {
+  background-color: #f84e1a;
+}
+.bd-red {
+  border-color: #f84e1a;
+}
+.l-blue {
+  background: #1f8dd6;
+}
+.l-purple {
+  background: #8058a5;
+}
+.l-yellow {
+  background: #fad232;
+}
+.l-orange {
+  background: #f37b1d;
+}
+.l-red {
+  background: #dd514c;
+}
+.l-green {
+  background: #5eb95e;
+}
+body,
+html {
+  font-family: "微软雅黑";
+  height: 100%;
+  background: #fff;
+}
+body input::-webkit-input-placeholder,
+html input::-webkit-input-placeholder {
+  color: #40aa40;
+  font-size: 0.8em;
+}
+body input::-moz-placeholder,
+html input::-moz-placeholder {
+  color: #40aa40;
+  font-size: 0.8em;
+}
+body input::-ms-input-placeholder,
+html input::-ms-input-placeholder {
+  color: #40aa40;
+  font-size: 0.8em;
+}
+body ::-webkit-scrollbar,
+html ::-webkit-scrollbar {
+  width: 0px;
+}
+body button,
+html button {
+  outline: none !important;
+}
+textarea {
+  max-width: 92%;
+  margin-left: 5%;
+  color: #f84e1a;
+}
+.position {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.position span {
+  color: #0275d8;
+}
+.position a:hover {
+  text-decoration: none;
+  text-shadow: 0px 1px 1px black;
+  color: #fff;
+}
+#wrap {
+  box-sizing: border-box;
+}
+#wrap #main-nav {
+  position: relative;
+  background: #F0F8FF;
+  z-index: 999;
+  box-shadow: 1px 1px 5px #122B40;
+}
+#wrap #main-nav .row {
+  margin: 0;
+  padding: 0;
+}
+#wrap .top-text {
+  height: 3em;
+  text-align: center;
+  line-height: 3em;
+  background: #0275d8;
+  color: #fff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: myfont;
+}
+#wrap .top-text span {
+  text-shadow: 1px 1px 10px #fff, -1px 1px 50px #fff;
+}
+#wrap .navbar-default {
+  background-color: transparent;
+  border-color: none;
+}
+#wrap .navbar-brand img {
+  text-align: center;
+  height: 25px;
+  width: auto;
+}
+#wrap nav,
+#wrap .navbar {
+  padding: 0;
+  margin: 0;
+  height: 25px;
+}
+#wrap .navbar-toggle {
+  background: #5eb95e;
+  opacity: 0.8;
+}
+#wrap .navbar-toggle .icon-bar {
+  background: white;
+}
+#wrap .navbar-right .glyphicon {
+  color: #fff;
+}
+#wrap .navbar-right {
+  position: absolute;
+  right: 0;
+}
+#wrap .enroll span>.badge,
+#wrap .enroll .progress-bar-success {
+  line-height: 20px;
+  margin-top: 12px;
+  box-shadow: 2px 2px 3px grey;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transform: scale(0.8,0.8);
+}
+#wrap .enroll .progress-bar-success:hover {
+  box-sizing: border-box;
+  border: 1px solid whitesmoke;
+}
+#wrap .enroll .form-group {
+  position: relative;
+  top: 7px;
+  box-sizing: border-box;
+}
+#wrap .enroll .form-group input {
+  height: 28px !important;
+  line-height: 20px;
+}
+#wrap .enroll .form-group input::-webkit-input-placeholder {
+  color: #40aa40;
+  font-size: 0.8em;
+}
+#wrap .enroll .form-group input::-moz-placeholder {
+  color: #40aa40;
+  font-size: 0.8em;
+}
+#wrap .enroll .form-group input::-ms-input-placeholder {
+  color: #40aa40;
+  font-size: 0.8em;
+}
+#wrap .enroll span:nth-last-child {
+  margin-left: -10px;
+}
+#wrap .nav>li {
+  border: 1px solid transparent;
+  font-size: 1.1em;
+  transform: scale(0.8,0.8);
+  padding: 0;
+  font-family: "微软雅黑";
+}
+#wrap .nav>li>a {
+  transition: border-top-left-radius 1s, border-bottom-right-radius 1s, background 1s, transform 1s;
+}
+#wrap .nav>li>a:hover {
+  background: #5cc2e0;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  color: white;
+}
+#wrap .nav .active {
+  background: #5BC0DE;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+#wrap .nav .active a {
+  color: #fff;
+}
+#wrap #footer {
+  box-sizing: border-box;
+  background: #74cee8;
+  margin-top: 30px;
+  border: 1px solid #5cc2e0;
+  color: #fff;
+}
+#wrap #footer .container {
+  border: 1px dashed #fff;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#wrap #footer .container .title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+#wrap #footer .container .content {
+  font-style: 1em;
+}
+#wrap #footer .container p {
+  margin-top: 5px;
+  word-break: break-all;
+}
+#wrap #footer .container a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9em;
+}
+#wrap #footer .container a:hover {
+  color: #000;
+}
+#wrap #footer .container img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  float: left;
+}
+#wrap #footer .container img:first-child {
+  transform: scale(0.9,0.9);
+}
+#wrap #footer .container .f4 {
+  font-size: 0.9em;
+  font-family: "微软雅黑";
+}
+#wrap #footer .container #wechat {
+  width: 120px;
+  height: 120px;
+  margin-left: -20px;
+  transition: all 1s ease-in-out;
+  border: 1px solid #fff;
+}
+#wrap #footer .container #wechat:hover {
+  transform: scale(1.2,1.2) translateX(10px);
+  cursor: none;
+}
+#wrap #footer .copyright {
+  background: #5cc2e0;
+  text-align: center;
+  width: 100% !important;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  bottom: 0;
+  color: #fff;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+@font-face {
+  font-family: "myfont";
+  src: url("../other/COPRGTL.TTF");
+}
+@font-face {
+  font-family: "myfont1";
+  src: url("../other/CASTELAR.TTF");
+}
+@media screen and (max-width: 768px) {
+  .returntop {
+    bottom: -10px !important;
+  }
+  .returntop .icon {
+    width: 50px !important;
+    text-align: center;
+    font-size: 1.2em !important;
+    transition: all 1s ease-in-out;
+    position: relative;
+    top: 0px;
+    color: green;
+  }
+  .returntop .text {
+    width: 50px !important;
+    font-size: 0.8em !important;
+  }
+  .returntop:hover .icon {
+    width: 50px;
+    text-align: center;
+    font-size: 1.2em !important;
+  }
+  .returntop:hover .text {
+    width: 50px;
+    text-align: center;
+    opacity: 1;
+    top: 0px;
+  }
+  #footer {
+    box-sizing: border-box;
+    background: #74cee8;
+    margin-top: 30px;
+    border: 1px solid #5cc2e0;
+    color: #fff;
+  }
+  #footer .container {
+    margin: 20px;
+    border: 1px solid #fff !important;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #footer .container .title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  #footer .container .content {
+    font-style: 1em;
+  }
+  #footer textarea {
+    max-width: 90%;
+    margin-left: 6% !important;
+    margin-right: 0 !important;
+    color: #f84e1a;
+  }
+  #footer .avatar-list {
+    text-align: center;
+    margin-left: 0;
+  }
+  #footer .avatar-list .checkbox-inline {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-left: 2px;
+  }
+  #footer .f1,
+  #footer .f2,
+  #footer .f3 {
+    border-bottom: 1px dashed #fff;
+    padding: 20px;
+  }
+  #footer .f4 {
+    padding: 20px;
+  }
+  #footer .floor-text {
+    margin-top: -80px;
+  }
+  #footer .message-broad {
+    height: auto;
+    padding-top: 10px;
+  }
+  #footer .message-broad .has-success .notice {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    margin-left: 10% !important;
+    top: 60%;
+    border: 1px solid #40aa40;
+    display: none;
+    line-height: 30px;
+  }
+  .navbar-collapse {
+    background: #72e0a1;
+  }
+  .nav>li>a {
+    text-align: left;
+    transition: none;
+  }
+  .nav>li>a:hover {
+    background: #40aa40 !important;
+    color: white;
+    border-radius: 0 !important;
+  }
+  .nav .active {
+    border-radius: 0 !important;
+    background: #40aa40 !important;
+  }
+  .nav .active a {
+    color: #fff;
+  }
+}
+.returntop {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 9999;
+}
+.returntop .icon {
+  width: 120px;
+  text-align: center;
+  font-size: 1.8em;
+  transition: all 1s ease-in-out;
+  position: relative;
+  top: -10px;
+  color: green;
+}
+.returntop .icon span {
+  stroke: 1px #fff;
+}
+.returntop .text {
+  width: 120px;
+  text-align: center;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  position: relative;
+  top: 10px;
+}
+.returntop:hover .icon {
+  width: 120px;
+  text-align: center;
+  font-size: 1.8em;
+}
+.returntop:hover .text {
+  width: 120px;
+  text-align: center;
+  opacity: 1;
+  top: -10px;
+}

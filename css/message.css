@@ -1,0 +1,390 @@
+@charset "utf-8";
+
+
+/*以下全为留言板的css样式，包括手机样式
+ * 
+ * 这些css其中大部分是自己写的，还有一部分是订制的bootstrap的风格* 
+ * 另外，还有一部分样式是覆盖join.css公共css样式.
+ * 具体样式，请按F12查看相应元素
+ * 
+ */
+
+body,
+html {
+  font-family: "微软雅黑";
+  height: 100%;
+  background: #fff;
+}
+body ::-webkit-scrollbar,
+html ::-webkit-scrollbar {
+  width: 0px;
+}
+body button,
+html button {
+  outline: none !important;
+}
+textarea {
+  max-width: 92%;
+  margin-left: 5%;
+  color: #f84e1a;
+}
+.position {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.position span {
+  color: #0275d8;
+}
+.position a:hover {
+  text-decoration: none;
+  text-shadow: 0px 1px 1px black;
+  color: #fff;
+}
+.main-broad {
+  margin: 0;
+  overflow: hidden;
+}
+.main-broad .input-panel {
+  opacity: 0.3;
+  position: relative;
+}
+.main-broad .input-panel .input-panel1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #5cc2e0;
+  z-index: 2;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.main-broad .myopacity {
+  opacity: 1;
+}
+.main-broad input {
+  color: #27ae60;
+}
+.main-broad .body-text>p {
+  border-bottom: 1px dashed #5cc2e0;
+  color: #27ae60;
+  padding-bottom: 5px;
+}
+.main-broad .memo {
+  padding: 0;
+  background: none;
+}
+.main-broad .memo h1 {
+  font-family: "myfont1";
+  text-shadow: 0px 1px 4px gray;
+}
+.message-broad {
+  height: auto;
+  padding-top: 10px;
+}
+.message-broad .has-success .notice {
+  position: absolute;
+  width: 80%;
+  height: 60px;
+  margin-left: 10%;
+  top: 50%;
+  border: 1px solid #27ae60;
+  display: none;
+  line-height: 30px;
+}
+.message-broad .has-success .notice span{
+	background:pink;
+	color:#fff;
+	
+}
+.avatar-list {
+  text-align: center;
+  margin-left: 5%;
+  width: 90%;
+}
+.avatar-list div {
+  margin-bottom: 10px;
+}
+.avatar-list .checkbox-inline {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 10px;
+  margin-left: 2px;
+}
+.avatar-list .checkbox-inline input[type="radio"] {
+  display: none;
+  margin-left: 40px;
+}
+.avatar-list .checkbox-inline img:hover {
+  border: 2px solid #27ae60;
+}
+.avatar-list .checkbox-inline input:checked+img {
+  border: 2px solid #27ae60;
+  opacity: 0.8;
+  transform: translateY(-10px);
+  transition: transform 1s;
+}
+.avatar-list .checkbox-inline img {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #5cc2e0;
+}
+.page-list li a {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.floor .panel-body {
+  border: none;
+  padding-top: 20px;
+  text-align: left;
+}
+.floor .panel-body .avatar {
+  width: 60px;
+  height: 60px;
+}
+.floor .panel-body .floor-text {
+  margin-left: 70px;
+}
+.floor .panel-body .floor-text span {
+  color: #0275d8;
+  font-size: 1em;
+}
+.floor .panel-body .floor-text .floor-count {
+  color: gray;
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+.floor .panel-body .floor-text p {
+  margin-top: 10px;
+  color: #000;
+  font-size: 0.8em;
+}
+.floor .panel-footer {
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-size: 0.8em;
+  color: gray;
+  border-top: 1px dashed gainsboro;
+}
+.mylabel {
+  height: auto;
+  margin-left: 10px;
+  overflow: hidden;
+}
+.mylabel .l-blue {
+  background: #1f8dd6;
+}
+.mylabel .l-purple {
+  background: #8058a5;
+}
+.mylabel .l-yellow {
+  background: #fad232;
+}
+.mylabel .l-orange {
+  background: #f37b1d;
+}
+.mylabel .l-red {
+  background: #dd514c;
+}
+.mylabel .l-green {
+  background: #5eb95e;
+}
+.mylabel .container {
+  width: 100%;
+  border: 1px dashed #5cc2e0;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.mylabel .container div {
+  height: 60px;
+  color: white;
+  padding: 1px;
+  box-sizing: border-box;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.mylabel .container div span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+}
+.mylabel .container div span span {
+  display: block;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.8em;
+  line-height: 20px;
+}
+.mylabel .container>.col-sm-6:hover {
+  opacity: 1;
+  transform: translateX(-20px);
+  transition: transform 1s;
+}
+.s1 {
+  font-size: 36px;
+  opacity: 0.8;
+  width: 120px;
+}
+.w2 {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  background: none;
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 0 transparent;
+  -webkit-transition: all 0.6s ease-in;
+  -moz-transition: all 0.6s ease-in;
+  -ms-transition: all 0.6s ease-in;
+  -o-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
+}
+.w2:after,
+.w2:before {
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  width: 0;
+  height: 0;
+}
+.w2:before {
+  bottom: 0;
+  right: 0;
+  -webkit-transition: border-color 0s ease-in 0.4s, width 0.2s ease-in 0.2s, height 0.2s ease-in;
+  transition: border-color 0s ease-in 0.4s, width 0.2s ease-in 0.2s, height 0.2s ease-in;
+}
+.w2:after {
+  top: 0;
+  left: 0;
+  -webkit-transition: border-color 0s ease-in 0.8s, width 0.2s ease-in 0.6s, height 0.2s ease-in 0.4s;
+  transition: border-color 0s ease-in 0.8s, width 0.2s ease-in 0.6s, height 0.2s ease-in 0.4s;
+}
+.w2:before {
+  content: '';
+  display: block;
+  position: absolute;
+}
+.w2:after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+.w2:hover:after,
+.w2:hover:before {
+  width: 100%;
+  height: 100%;
+}
+.w2:hover:before {
+  border-bottom-color: #27ae60;
+  border-left-color: #27ae60;
+  -webkit-transition: border-color 0s ease-out 0.4s, width 0.2s ease-out 0.4s, height 0.2s ease-out 0.6s;
+  transition: border-color 0s ease-out 0.4s, width 0.2s ease-out 0.4s, height 0.2s ease-out 0.6s;
+}
+.w2:hover:after {
+  border-top-color: #27ae60;
+  border-right-color: #27ae60;
+  -webkit-transition: width 0.2s ease-out, height 0.2s ease-out 0.2s;
+  transition: width 0.2s ease-out, height 0.2s ease-out 0.2s;
+}
+.watchLogo {
+  margin: 0 auto;
+  text-align: center;
+  width: 100px;
+  height: 70px;
+}
+.watchLogo .w2 {
+  width: 100px;
+  cursor: pointer;
+  animation: rotate1 2s linear infinite;
+}
+.watchLogo .w2:hover {
+  animation: none;
+}
+input::-webkit-input-placeholder {
+  color: #27ae60;
+  font-size: 0.8em;
+}
+input::-moz-placeholder {
+  color: #27ae60;
+  font-size: 0.8em;
+}
+input::-ms-input-placeholder {
+  color: #27ae60;
+  font-size: 0.8em;
+}
+textarea::-webkit-input-placeholder {
+  color: #27ae60;
+  font-size: 0.8em;
+}
+textarea::-moz-placeholder {
+  color: #27ae60;
+  font-size: 0.8em;
+}
+textarea::-ms-input-placeholder {
+  color: #27ae60;
+  font-size: 0.8em;
+}
+@font-face {
+  font-family: "myfont";
+  src: url("../other/COPRGTL.TTF");
+}
+@font-face {
+  font-family: "myfont1";
+  src: url("../other/CASTELAR.TTF");
+}
+@keyframes rotate1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  textarea {
+    max-width: 90%;
+    margin-left: 6% !important;
+    margin-right: 0 !important;
+    color: #f84e1a;
+  }
+  .avatar-list {
+    text-align: center;
+    margin-left: 0;
+  }
+  .avatar-list .checkbox-inline {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-left: 2px;
+  }
+  .f1,
+  .f2,
+  .f3 {
+    border-bottom: 1px dashed #fff;
+    padding: 20px;
+  }
+  .f4 {
+    padding: 20px;
+  }
+  .floor-text {
+    margin-top: -80px;
+  }
+  .message-broad {
+    height: auto;
+    padding-top: 10px;
+  }
+  .message-broad .has-success .notice {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    margin-left: 10% !important;
+    top: 60%;
+    border: 1px solid #27ae60;
+    display: none;
+    line-height: 30px;
+  }
+}
+.modal{margin-top: 10%;}
+  .icon{color:deepskyblue !important;}
