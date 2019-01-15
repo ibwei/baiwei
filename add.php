@@ -3,8 +3,8 @@
 	//此功能是将留言板的留言存入数据库
 	header("Content-type: text/html; charset=utf-8");
 	$host="localhost:3306";
-	$userName="root";
-	$password="08150512love";
+	$userName="*****";
+	$password="*******";
 	
 	$link= mysql_connect($host,$userName,$password);  //连接数据库
 	$dbName="a0913135035";
