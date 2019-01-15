@@ -359,8 +359,8 @@
 						<div class="floor">
 							<?php
 $host="localhost:3306";
-$userName="root";
-$password="08150512love";
+$userName="*****";
+$password="*****";
 $link= mysql_connect($host,$userName,$password);  //连接数据库
 $dbName="a0913135035";
 mysql_query("set names utf8");
